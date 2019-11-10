@@ -1,0 +1,17 @@
+<br>
+
+<div class="container">
+    <article class="article" *ngFor="let article of articles">
+        <a class="artcile-link" [routerLink]="['/article', article._id]">
+            <div class="row">
+                <div class="columna col-4 col-sm-4 col-md-4 col-lg-4">
+                    <img class="img-article" [src]="article.img" alt="qwerty">
+                </div>
+                <div class="columna col-8 col-sm-8 col-md-8 col-lg-8">
+                    <h2>{{ article.title }}</h2>
+                    <p>{{ article.summary }}</p>
+                </div>
+            </div>
+        </a>
+    </article>
+</div>

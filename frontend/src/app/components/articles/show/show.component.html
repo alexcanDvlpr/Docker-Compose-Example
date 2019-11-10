@@ -1,0 +1,13 @@
+<div class="container">
+    <br><br>
+    <div class="row article" *ngIf="article">
+        <div class="col-4 col-sm-4 col-md-4 col-lg-4">
+            <img [src]="article.img" alt="sds">
+        </div>
+        <div class="col-8 col-sm-8 col-md-8 col-lg-8">
+            <h1 class="textcenter">{{ article.title }}</h1>
+            <hr>
+            <p>{{ article.body }}</p>
+        </div>
+    </div>
+</div>

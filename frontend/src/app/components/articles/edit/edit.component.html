@@ -1,0 +1,25 @@
+<div class="container">
+    <div class="form">
+        <div class="form-group">
+            <label for="title">Title</label>
+            <input [(ngModel)]="article.title" [ngModelOptions]="{standalone: true}" class="form-control" type="text" id="title" placeholder="Title...">
+        </div>
+        <div class="form-group">
+            <label for="summary">Summary</label>
+            <input [(ngModel)]="article.summary" [ngModelOptions]="{standalone: true}" class="form-control" type="text" id="summary" placeholder="Summary...">
+        </div>
+        <div class="form-group">
+            <label for="body">Body</label>
+            <input [(ngModel)]="article.body" [ngModelOptions]="{standalone: true}" class="form-control" type="text" id="body" placeholder="Body...">
+        </div>
+        <div class="form-group">
+            <label for="author">Author</label>
+            <input [(ngModel)]="article.author" [ngModelOptions]="{standalone: true}" class="form-control" type="text" id="author" placeholder="Author...">
+        </div>
+        <div class="form-group">
+            <label for="img">Image URL</label>
+            <input [(ngModel)]="article.img" [ngModelOptions]="{standalone: true}" class="form-control" type="text" id="img" placeholder="Image URL...">
+        </div>
+        <div (click)="sendArticle()" class="btn btn-dark btn-block">Enviar</div>
+    </div>
+</div>

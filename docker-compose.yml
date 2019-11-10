@@ -1,0 +1,17 @@
+version: "3.7"
+services:
+  db:
+    
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+      args:
+        buildno: 1
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+      args:
+        buildno: 1
+  nginx:
